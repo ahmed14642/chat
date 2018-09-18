@@ -1,0 +1,54 @@
+<RelativeLayout
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:background="@color/LightGrey">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:id="@+id/appbar">
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/username"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"/>
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Login"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:background="@color/red"
+        android:id="@+id/login"
+        android:layout_gravity="bottom"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="loginon" />
+
+</RelativeLayout>
